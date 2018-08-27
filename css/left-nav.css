@@ -3,12 +3,12 @@
 {
     display: flex;
     position: absolute;
-    width: 200px;
+    width: 180px;
     height: 100%;
     background: white;
     left: 0;
     transition: all .3s ease;
-    font-size: 20px;
+    font-size: 21px;
 }
 .nav-wrapper
 {
@@ -23,19 +23,26 @@
     text-decoration: none;
     color: #404040;
 }
+a.sd-nav-item:hover
+{
+    text-decoration: underline;
+}
 .section
 {
-    border-bottom: dotted 2px gray;
+    border-bottom: dotted 2px #999999;
+    padding: 10px 0;
+    box-sizing: border-box;
+    width: 80%;
 }
-
-
-
-
-
-
-
-
-
+.socialmedia
+{
+    width: 100%;
+}
+.social-icon
+{
+    margin: 30px auto;
+    cursor: pointer;
+}
 
 .toggle-btn
 {
@@ -54,7 +61,7 @@
 }
 .active
 {
-    transform: translate(-200px);
+    transform: translate(-180px);
 }
 .active-btn
 {
@@ -63,7 +70,7 @@
 
 #toggler-icon
 {
-    color: gray;
+    color: #909090;
     transition: translate .4s ease, rotate .01s linear;
 }
 .active-icon
