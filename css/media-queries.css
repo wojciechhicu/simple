@@ -1,0 +1,22 @@
+/*=== MEDIA QUERIES FOR TOP NAV ===*/
+@media only screen and (max-width: 1500px)
+{
+    .top-nav
+    {
+        justify-content: flex-start;
+    }
+}
+
+/*=== MEDIA QUERIES FOR LEFT NAV===*/
+@media only screen and (max-width: 1500px)
+{
+    #left-nav
+    {
+        margin-top: 100px;
+    }
+
+    .content
+    {
+        transform: translate(40px)
+    }
+}
