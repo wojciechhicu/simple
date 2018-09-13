@@ -40,8 +40,6 @@
 }
 .column
 {
-    display: block;
-    align-items: baseline;
     width: 50%;
     box-sizing: border-box;
     padding: 10px;

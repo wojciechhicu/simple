@@ -7,6 +7,7 @@
     display: flex;
     font-size: 20px;
     justify-content: center;
+    z-index: 10; /* always in top*/
 }
 .logo
 {
@@ -78,6 +79,86 @@
     margin: auto 20px auto 10px;
     cursor: pointer;
 }
+/* Top nav for mobile version */
+/* Hamburger menu*/
+.hamburger
+{
+    width: 40px;
+    height: 35px;
+    border: 0;
+    display: none; /* hide in PC version */
+    border-top: 5px solid white;
+    background: transparent;
+    position: relative;
+    margin: 20px auto 20px 20px;
+    cursor: pointer;
+    transition: .3s transform ease
+}
+.hamburger::after, .hamburger::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid white;
+    transform: translateY(10px);
+}
+.hamburger::after
+{
+    transform: translateY(25px);
+    transition: .3s transform ease;
+}
 
+.hamburger.hamburgerToggle
+{
+    transform: rotate(45deg) translateY(5px);
+    border-top: none;
+}
+.hamburger.hamburgerToggle::after
+{
+    transform: rotate(-90deg) translate(-10px);
+}
 
+/* Items and links in mobile menu*/
+/*Menu is hidden by default height/width = 0*/
+.nav-menu-mobile
+{
+    display: block; 
+    background: #023a5c;
+    position: fixed;
+    width: 0;
+    height: 0;
+    margin-top: 80px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-align: center;
+    transition: all .3s ease;
+    z-index: 10; /*Menu always in top*/
+    overflow: hidden;
+}
+.nav-items-mobile
+{
+    display: flex;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.nav-links-mobile
+{
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-links-mobile:hover
+{
+    text-decoration: underline;
+}
+
+/* Class aded to menu mobile after hamburger click, show/hide menu*/
+.mobile-is-visible
+{
+    width: 100vw;
+    height: 100vh;
+}
 

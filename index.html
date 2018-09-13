@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="Shortcut icon" href="img/favicon.ico" />
 </head>
+
 <body>
-<!-- Top menu section -->
+    <!-- Top menu section -->
     <div class="top-nav">
+        <!-- Menu toggler for mobile version -->
+        <div class="hamburger" title="Ukryj/schowaj menu"></div>
+        <!-- Menu for PC version -->
         <a title="SIMPLE"><img class="logo nav-link" src="img/logo.png"></a>
-        <ul>
+        <ul class="nav-links-list">
             <li class="nav-item">
                 <a class="nav-link" title="Aktualności" href="#">Aktualności</a>
             </li>
@@ -34,14 +38,27 @@
                 <a class="nav-link" title="Kontakt" href="#">Kontakt</a>
             </li>
         </ul>
-
+        
+        <!-- Search input always visible-->
         <div class="searchBar">
             <input class="searchInput" placeholder="Szukaj..." type="text">
-            <img  title="Szukaj w bazie" class="searchLoop" src="img/loop.png" alt="">
+            <img title="Szukaj w bazie" class="searchLoop" src="img/loop.png" alt="">
         </div>
-    </div><!-- End of Top menu section -->
-
-<!-- Left menu section -->
+    </div>
+    <div class="nav-menu-mobile">
+        <li class="nav-items-mobile"><a title="Aktualności" class="nav-links-mobile" href="#">Aktualności</a></li>
+        <li class="nav-items-mobile"><a title="Branże" class="nav-links-mobile" href="#">Branże</a></li>
+        <li class="nav-items-mobile"><a title="Produkty" class="nav-links-mobile" href="#">Produkty</a></li>
+        <li class="nav-items-mobile"><a title="Usługi" class="nav-links-mobile" href="#">Usługi</a></li>
+        <li class="nav-items-mobile"><a title="Referencje" class="nav-links-mobile" href="#">Referencje</a></li>
+        <li class="nav-items-mobile"><a title="Kontakt" class="nav-links-mobile" href="#">Kontakt</a></li>
+        <li class="nav-items-mobile"><a title="O firmie" class="nav-links-mobile" href="#">O firmie</a></li>
+        <li class="nav-items-mobile"><a title="Nagrody" class="nav-links-mobile" href="#">Nagrody</a></li>
+        <li class="nav-items-mobile"><a title="Relacje inwestorskie" class="nav-links-mobile" href="#">Relacje inwestorskie</a></li>
+        <li class="nav-items-mobile"><a title="Partnerzy" class="nav-links-mobile" href="#">Partnerzy</a></li>
+        <li class="nav-items-mobile"><a title="Kariera" class="nav-links-mobile" href="#">Kariera</a></li>
+    </div>
+    <!-- Left menu section -->
     <div id="left-nav">
         <div title="Zwiń menu" class="toggle-btn">
             <div id="toggler-icon">&#8249;</div>
@@ -79,8 +96,7 @@
                 </div>
             </ul>
         </div>
-    </div><!-- End of left menu section-->
-    
+    </div>
     <!-- Content section -->
     <div class="content">
         <div class="header">
@@ -90,7 +106,7 @@
             SIMPLE - z nami biznes jest prostrzy!
         </div>
         <div class="column">
-            <img src="img/image.png">
+            <img class="content-image-2" src="img/image.png">
             <div class="wrapper">
                 <h4>ponad 24 lata doświadczenia</h4>
                 SIMPLE S.A. jest wiodącym w kraju producentem rozwiązań informatycznych do wspomagania zarządzania przedsiębiorstwami. Będąc producentem oprogramowania, dajemy pełną gwarancję dotyczącą jego działania oraz dostosowania do zmieniających się warunków biznesowych i przepisów prawa oraz szybkiej reakcji na zmieniające się potrzeby klientów.
@@ -123,11 +139,10 @@
                 <h4>zawsze blisko ciebie</h4> SIMPLE S.A. wraz z Partnerami prowadzi szeroko zakrojoną sprzedaż do Klientów na terenie całego kraju. Chcemy być jak najbliżej naszych klientów, dlatego wciąż dążymy do poszerzenia sieci naszej sprzedaży poza Unią Europejską.
             </div>
         </div>
-    </div><!-- End of content section -->
-    
+    </div>
     <!-- Footer section -->
     <div class="footer"></div>
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

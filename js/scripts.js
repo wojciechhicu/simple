@@ -1,5 +1,5 @@
 //===toggle left nav menu after click===
-let togglemenu = () =>
+const togglemenu = () =>
 {
     //===declaring variables===
     //left nav object witchout btn
@@ -25,15 +25,29 @@ let togglemenu = () =>
 }
 
 //=== show/hide search input field
-let toggleInput = () =>
+const toggleInput = () =>
 {
-    //toggle class acite-search-field which show input field; Display: flex;
     document.querySelector('.searchInput').classList.toggle('active-search-field');
 }
 
-
+//=== toggle hamburger menu and visibility of full screen menu
+const toggleMobileNav = () =>
+{
+    //toggle hamburger menu to "X"
+    document.querySelector('.hamburger').classList.toggle('hamburgerToggle');
+    
+    document.querySelector('.nav-menu-mobile').classList.toggle('mobile-is-visible');
+}
 
 
 //add event listeners
 document.querySelector('.toggle-btn').addEventListener('click', togglemenu);
 document.querySelector('.searchLoop').addEventListener('click', toggleInput);
+document.querySelector('.hamburger').addEventListener('click', toggleMobileNav);
+
+//add event listener for all classes, after any click into link "redirect" to clicked website and hide menu
+const links = document.getElementsByClassName('nav-links-mobile');
+for(i = 0; i< links.length;i++ )
+    {
+        links[i].addEventListener('click', toggleMobileNav);
+    }
